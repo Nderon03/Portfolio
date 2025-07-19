@@ -114,14 +114,23 @@
     text-align: justify;
   }
 
-  /* ✅ NEW: Stack project cards vertically on mobile */
+  /* ✅ Fix horizontal shift on mobile */
+  section {
+    margin: 0 1rem;
+  }
+
+  /* ✅ Stack and center project cards on mobile */
   #projects .about-containers {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
   }
 
   #projects .details-container {
-    width: 100%;
-    margin-bottom: 1.5rem;
+    width: 90%;
+    margin: 0 auto 1.5rem auto;
+    box-sizing: border-box;
   }
 }
