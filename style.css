@@ -101,12 +101,14 @@ a:hover{
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: white;
+    background-color: transparent; /* Changed from white to transparent */
     width: fit-content;
     max-height: 0;
     overflow: hidden;
     transition: all 0.3 ease-in-out;
+    box-shadow: none; /* remove any shadows that highlight bg */
 }
+
 
 .menu-links a{
     display: block;

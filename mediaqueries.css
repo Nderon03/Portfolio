@@ -76,6 +76,13 @@
     section {
       margin: 0 2rem;
     }
+    .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+    margin-left: -10rem;  /* shift left */
+  }
+    
   }
 }
 
@@ -132,6 +139,7 @@
     width: auto;
     height: 46vw;
     justify-content: center;
+    margin-left: -10rem;  /* shift left */
   }
 
   .section__text__p2 {
