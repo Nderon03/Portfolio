@@ -8,17 +8,20 @@
   <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 <body>
+
   <nav id="desktop-nav">
-    <div class="logo"><strong>Nderon Beqiri</strong></div>
+    <div class="logo fade-in"><strong>Nderon Beqiri</strong></div>
+
     <div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul class="nav-links fade-in" style="animation-delay: 0.3s;">
+        <li class="fade-in" style="animation-delay: 0.4s;"><a href="#about">About</a></li>
+        <li class="fade-in" style="animation-delay: 0.5s;"><a href="#experience">Experience</a></li>
+        <li class="fade-in" style="animation-delay: 0.6s;"><a href="#projects">Projects</a></li>
+        <li class="fade-in" style="animation-delay: 0.7s;"><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
+
 
   <nav id="hamburger-nav">
     <div class="logo">Nderon Beqiri</div>
@@ -37,19 +40,19 @@
     </div>
   </nav>
 
-  <section id="profile">
-    <div class="section__pic-container">
+  <section id="profile" class="fade-in">
+    <div class="section__pic-container fade-in" style="animation-delay: 0.2s">
       <img src="./assets/profile-pic.png" alt="Nderon Beqiri profile picture" />
     </div>
-    <div class="section__text">
+    <div class="section__text fade-in" style="animation-delay: 0.4s">
       <p class="section__text__p1">Hello, I'm</p>
-      <h1 class="title">Nderon Beqiri</h1>
-      <p class="section__text__p2">Computer Science Graduate</p>
-      <div class="btn-container">
+      <h1 class="title fade-in" style="animation-delay: 0.6s">Nderon Beqiri</h1>
+      <p class="section__text__p2 fade-in" style="animation-delay: 0.8s">Computer Science Graduate</p>
+      <div class="btn-container fade-in" style="animation-delay: 1s">
         <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">View CV</button>
         <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
       </div>
-      <div id="socials-container">
+      <div id="socials-container" class="fade-in" style="animation-delay: 1.2s">
         <img
           src="./assets/linkedin.png"
           alt="LinkedIn Profile"
@@ -59,6 +62,7 @@
       </div>
     </div>
   </section>
+
 
   <section id="about">
     <h1 class="title">About Me</h1>
