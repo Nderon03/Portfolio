@@ -194,11 +194,20 @@
     box-sizing: border-box;
   }
 
-  #experience .article-container {
-    display: flex;
-    grid-template-columns: 1fr 1fr;
-    gap: 0rem; /* adjust spacing between items */
-  }
+#experience .article-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#experience .article-container article {
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+  justify-content: flex-start;
+}
 
 
 
