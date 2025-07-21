@@ -195,14 +195,11 @@
   }
 
   #experience .article-container {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem; /* adjust spacing between items */
+    gap: 0rem; /* adjust spacing between items */
   }
 
-  #experience .article-container article {
-    justify-content: flex-start;
-  }
 
 
 }
