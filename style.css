@@ -387,17 +387,24 @@ article .icon {
 
 .stars::before {
   content: "★★★★★";
+  letter-spacing: 2px;
   background: linear-gradient(
     90deg,
     #fbc02d calc(var(--rating, 0) * 20%),
     #ccc calc(var(--rating, 0) * 20%)
   );
-  background-clip: text;
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
   -webkit-background-clip: text;
-  color: transparent;
   -webkit-text-fill-color: transparent;
   display: block;
+  transition: background-size 1s ease;
 }
+
+.stars.animate-stars::before {
+  background-size: 100% 100%;
+}
+
 
 /* Support full and half-star increments */
 [data-rating="5"]   { --rating: 5; }
