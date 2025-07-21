@@ -70,10 +70,6 @@
     box-sizing: border-box;
   }
 
-  #about {
-    margin-top: 1rem;
-  }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -85,10 +81,6 @@
     width: 275px;
     height: 275px;
     margin: 0 auto 2rem;
-  }
-
-  #about {
-    margin-top: 2rem;
   }
 
   #profile .section__pic-container {
@@ -187,10 +179,6 @@
     width: 90%;
     margin: 0 auto 1.5rem auto;
     box-sizing: border-box;
-  }
-
-  #about {
-    margin-top: -3rem;
   }
 
 }
