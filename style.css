@@ -375,6 +375,42 @@ article .icon {
   cursor: default;
 }
 
+.stars {
+  position: relative;
+  font-size: 1.2rem;
+  line-height: 1;
+  display: inline-block;
+  color: #ccc;
+}
+
+.stars::before {
+  content: "★★★★★";
+  background: linear-gradient(
+    90deg,
+    #fbc02d calc(var(--rating, 0) * 20%),
+    #ccc calc(var(--rating, 0) * 20%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: block;
+}
+
+/* Support full and half-star increments */
+[data-rating="5"]   { --rating: 5; }
+[data-rating="4.5"] { --rating: 4.5; }
+[data-rating="4"]   { --rating: 4; }
+[data-rating="3.5"] { --rating: 3.5; }
+[data-rating="3"]   { --rating: 3; }
+[data-rating="2.5"] { --rating: 2.5; }
+[data-rating="2"]   { --rating: 2; }
+[data-rating="1.5"] { --rating: 1.5; }
+[data-rating="1"]   { --rating: 1; }
+[data-rating="0.5"] { --rating: 0.5; }
+[data-rating="0"]   { --rating: 0; }
+
+
 /* Projects Section */
 #projects {
   position: relative;
