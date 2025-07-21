@@ -3,38 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <meta name="description" content="Nderon Beqiri - Computer Science Graduate and Full-stack Developer Portfolio" />
+  <meta name="keywords" content="portfolio, developer, computer science, web development, java, python, javascript" />
+  <meta name="author" content="Nderon Beqiri" />
+  <title>Nderon Beqiri | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-
-  <!-- Desktop Navigation -->
-  <nav id="desktop-nav">
-    <div class="logo fade-in"><strong>Nderon Beqiri</strong></div>
-    <ul class="nav-links fade-in">
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Hamburger Navigation -->
-  <nav id="hamburger-nav">
-    <div class="logo">Nderon Beqiri</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span><span></span><span></span>
-      </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      </div>
-    </div>
-  </nav>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
 
   <!-- Profile Section -->
   <section id="profile" class="fade-in">
@@ -42,23 +24,27 @@
       <img src="./assets/profile-pic.png" alt="Nderon Beqiri profile picture" />
     </div>
     <div class="section__text">
-      <div class="intro-box">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Nderon Beqiri</h1>
-        <p class="section__text__p2">Computer Science Graduate</p>
-        <div class="btn-container">
-          <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">View CV</button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
-        </div>
-        <div id="socials-container">
-          <a href="https://www.linkedin.com/in/nderon-beqiri-362b8831a/" target="_blank" rel="noopener noreferrer">
-            <img src="./assets/linkedin.png" alt="LinkedIn Profile" class="icon" />
-          </a>
-        </div>
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Nderon Beqiri</h1>
+      <p class="section__text__p2">Computer Science Graduate</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+          <span>View CV</span>
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <span>Contact Info</span>
+        </button>
+      </div>
+      <div id="socials-container">
+        <a href="https://www.linkedin.com/in/nderon-beqiri-362b8831a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+          <img src="./assets/linkedin.png" alt="LinkedIn Profile" class="icon" />
+        </a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+          <img src="./assets/github.png" alt="GitHub Profile" class="icon" />
+        </a>
       </div>
     </div>
   </section>
-
 
   <!-- About Section -->
   <section id="about">
@@ -101,7 +87,7 @@
     <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
   </section>
 
-  <!-- Experience Section -->
+<!-- Experience Section -->
   <section id="experience">
     <h1 class="title">Experience</h1>
     <div class="experience-details-container">
@@ -180,7 +166,6 @@
     </div>
     <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
   </section>
-
 
   <!-- Projects Section -->
   <section id="projects">
@@ -268,7 +253,7 @@
         </ul>
       </div>
     </nav>
-    <p><a href="#" style="text-decoration: none; color: inherit;">Nderon Beqiri 2025</a></p>
+    <p>&copy; <a href="#" style="text-decoration: none; color: inherit;">Nderon Beqiri 2025</a> | All Rights Reserved</p>
   </footer>
 
   <!-- Scripts -->
