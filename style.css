@@ -59,6 +59,7 @@ a:hover {
 
 .logo:hover {
   cursor: default;
+  font-weight: 800;
 }
 
 /* Hamburger Menu */
@@ -70,6 +71,7 @@ a:hover {
   position: relative;
   display: inline-block;
 }
+
 
 .hamburger-icon {
   display: flex;
