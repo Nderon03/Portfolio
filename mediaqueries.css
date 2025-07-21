@@ -71,7 +71,7 @@
   }
 
   #about {
-    margin-top: -8.5rem;
+    margin-top: 1rem;
   }
 }
 
@@ -85,6 +85,10 @@
     height: 46vw;
     justify-content: center;
     margin-left: -10rem;
+  }
+
+  #about {
+    margin-top: 1rem;
   }
 }
 
@@ -175,6 +179,6 @@
   }
 
   #about {
-    margin-top: -7.5rem;
+    margin-top: 1rem;
   }
 }
