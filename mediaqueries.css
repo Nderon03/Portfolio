@@ -251,11 +251,17 @@ footer.show {
     margin-bottom: 1.5rem;
   }
 
-  .about-containers,
+  .about-containers {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
   }
+
 
   .contact-info-container {
     margin: 0.5rem 0;
