@@ -217,6 +217,12 @@
     width: 2.5rem;
     height: 2.5rem;
   }
+  
+footer.show {
+  transform: translateY(0); /* Slide down into view */
+  pointer-events: auto;
+}
+
 }
 
 @media screen and (max-width: 600px) {

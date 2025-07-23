@@ -173,3 +173,20 @@ if (experienceSection) {
     observer.observe(experienceSection);
 }
 });
+
+let lastScrollY = window.scrollY;
+const footer = document.querySelector("footer");
+
+window.addEventListener("scroll", () => {
+  if (window.innerWidth > 768) return;
+
+  if (window.scrollY > lastScrollY) {
+    // Scrolling up
+    footer.classList.add("show");
+  } else {
+    // Scrolling down
+    footer.classList.remove("show");
+  }
+
+  lastScrollY = window.scrollY;
+});
