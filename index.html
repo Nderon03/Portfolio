@@ -1,279 +1,117 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Nderon Beqiri - Computer Science Graduate and Full-stack Developer Portfolio" />
-  <meta name="keywords" content="portfolio, developer, computer science, web development, java, python, javascript" />
-  <meta name="author" content="Nderon Beqiri" />
-  <title>Nderon Beqiri | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="mediaqueries.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nderon Beqiri | Software Developer</title>
+<meta name="description" content="Nderon Beqiri: Computer Science graduate and software developer building useful applications and interactive games.">
+<meta name="author" content="Nderon Beqiri">
+<meta name="theme-color" content="#0a0c10">
+<meta property="og:title" content="Nderon Beqiri | Software Developer">
+<meta property="og:description" content="Computer Science graduate building useful applications and interactive games.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0c10'/%3E%3Cpath d='M14 20l14 12-14 12' fill='none' stroke='%23d4b483' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M34 46h18' stroke='%23d4b483' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Preloader -->
-  <div class="preloader">
-    <div class="loader"></div>
-  </div>
+<div id="bar" aria-hidden="true"></div><div id="grid" aria-hidden="true"></div>
+<header class="nav" id="nav"><div class="wrap">
+<a class="logo" href="#home">nderon<b>.</b>dev</a>
+<button class="burger" id="bg" aria-label="Toggle menu" aria-expanded="false" aria-controls="lk"><span></span><span></span><span></span></button>
+<ul class="links" id="lk">
+<li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li><li><a href="#experience">Experience</a></li><li><a href="#contact">Contact</a></li>
+<li><a class="cvl" href="assets/CV_Nderon_Beqiri.pdf" target="_blank" rel="noopener noreferrer">CV ↗</a></li>
+</ul></div></header>
+<main>
+<section class="hero" id="home"><div class="wrap">
+<div>
+<p class="eyebrow h" style="--d:.05s">Computer Science graduate · Software developer</p>
+<h1 class="h" style="--d:.15s">I build useful apps and <em>interactive</em> experiences.</h1>
+<p class="lead h" style="--d:.28s">I’m Nderon Beqiri, a Computer Science graduate from the University of Nottingham. I turn ideas into working software, from multiplayer party games to AI experiments and automation tools.</p>
+<div class="cta h" style="--d:.4s">
+<a class="btn p" href="#projects">Explore My Work <span aria-hidden="true">→</span></a>
+<a class="btn" href="assets/CV_Nderon_Beqiri.pdf" target="_blank" rel="noopener noreferrer">View CV</a></div>
+<div class="soc h" style="--d:.5s"><a href="https://github.com/Nderon03" target="_blank" rel="noopener noreferrer" aria-label="Nderon on GitHub">GitHub ↗</a><a href="https://www.linkedin.com/in/nderon-beqiri-362b8831a/" target="_blank" rel="noopener noreferrer" aria-label="Nderon on LinkedIn">LinkedIn ↗</a></div>
+</div>
+<div class="term h" style="--d:.35s" aria-hidden="true"><div class="bar"><i></i><i></i><i></i><span>nderon.js</span></div>
+<pre><code><span class="ln">1</span><span class="k">const</span> <span class="v">nderon</span> = {
+<span class="ln">2</span>  name: <span class="s">"Nderon Beqiri"</span>,
+<span class="ln">3</span>  degree: <span class="s">"BSc (Hons) Computer Science, 2:1"</span>,
+<span class="ln">4</span>  uni: <span class="s">"University of Nottingham"</span>,
+<span class="ln">5</span>  languages: [<span class="s">"Python"</span>, <span class="s">"Java"</span>,
+<span class="ln">6</span>    <span class="s">"JavaScript"</span>, <span class="s">"C++"</span>, <span class="s">"SQL"</span>],
+<span class="ln">7</span>  building: [<span class="s">"games"</span>, <span class="s">"AI models"</span>,
+<span class="ln">8</span>    <span class="s">"scenes"</span>],
+<span class="ln">9</span>};<span class="cur"></span></code></pre></div>
+</div>
+<div class="wrap stats h" style="--d:.6s">
+<a href="#projects"><b>5+</b><span>Projects built &amp; shipped ↓</span></a>
+<a href="#research"><b>2+</b><span>Research papers written ↓</span></a>
+<a href="#skills"><b>8</b><span>Programming languages ↓</span></a>
+<a href="#about"><b>2:1</b><span>BSc (Hons) Computer Science ↓</span></a></div>
+</section>
 
-  <!-- Profile Section -->
-  <section id="profile" class="fade-in">
-    <div class="section__pic-container">
-      <img src="./assets/profile-pic.png" alt="Nderon Beqiri profile picture" />
-    </div>
-    <div class="section__text">
-      <p class="section__text__p1">Hello, I'm</p>
-      <h1 class="title">Nderon Beqiri</h1>
-      <p class="section__text__p2">Computer Science Graduate</p>
-      <div class="btn-container">
-        <a
-          class="btn btn-color-2"
-          href="./assets/CV_Nderon_Beqiri.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span>View CV</span>
-        </a>
+<section id="projects"><div class="wrap">
+<div class="sh rv"><span>02 /</span><h2>Projects<i>()</i></h2></div>
+<div class="feat">
+<article class="card rv">
+<div class="thumb t1"><div class="art"></div><div class="mark">SPORTS<br>IMPOSTOR</div>
+<img src="assets/sports-impostor.png" alt="Screenshot of the Sports Impostor game" loading="lazy" onerror="this.remove()"></div>
+<div class="cb"><span class="badge">● live</span><h3>Sports Impostor</h3>
+<p>A sports-themed social deduction party game. Everyone knows the secret except the impostor, and the group has to work out who’s bluffing.</p>
+<ul class="tags"><li>Party game</li><li>Social deduction</li><li>Sports</li><li>Browser</li></ul>
+<a class="btn p" href="https://sportsimpostor.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Play Sports Impostor live (opens in a new tab)">Play Live <span aria-hidden="true">↗</span></a></div></article>
+<article class="card rv" style="--d:.12s">
+<div class="thumb t2"><div class="art"></div><div class="mark">TRAITOR<br>TRIVIA</div>
+<img src="assets/traitor-trivia.png" alt="Screenshot of the Traitor Trivia game" loading="lazy" onerror="this.remove()"></div>
+<div class="cb"><span class="badge">● live</span><h3>Traitor Trivia</h3>
+<p>A social trivia and deception game built around knowledge, suspicion and strategic decisions.</p>
+<ul class="tags"><li>Trivia</li><li>Deception</li><li>Party game</li><li>Browser</li></ul>
+<a class="btn p" href="https://traitor-trivia.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Play Traitor Trivia live (opens in a new tab)">Play Live <span aria-hidden="true">↗</span></a></div></article>
+</div>
+<p class="sub rv">// more projects</p>
+<div class="more">
+<article class="card rv"><div class="thumb"><video muted loop playsinline preload="none" poster="assets/project-2.png" aria-label="Connect 4 demo video"><source src="assets/connect4.mp4" type="video/mp4"></video><button class="pp" type="button" aria-label="Play or pause Connect 4 video">▶</button></div>
+<div class="cb"><h3>Connect 4 with Python</h3><p>Connect 4 against a Minimax AI opponent, and the basis for my paper on balancing AI strength against search time.</p><a class="lnk" href="https://github.com/Nderon03/Connect4" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a></div></article>
+<article class="card rv" style="--d:.08s"><div class="thumb"><video muted loop playsinline preload="none" poster="assets/project-1.png" aria-label="Snake demo video"><source src="assets/snake.mp4" type="video/mp4"></video><button class="pp" type="button" aria-label="Play or pause Snake video">▶</button></div>
+<div class="cb"><h3>Snake with Java</h3><p>A classic Snake game written in Java.</p><a class="lnk" href="https://github.com/Nderon03/Snake" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a></div></article>
+<article class="card rv" style="--d:.16s"><div class="thumb"><video muted loop playsinline preload="none" poster="assets/project-3.png" aria-label="OpenGL scene demo video"><source src="assets/openglscene.mp4" type="video/mp4"></video><button class="pp" type="button" aria-label="Play or pause OpenGL video">▶</button></div>
+<div class="cb"><h3>Scene with OpenGL</h3><p>A 3D scene built in C++ with OpenGL.</p><a class="lnk" href="https://github.com/Nderon03/OpenGL-Scene" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a></div></article>
+</div>
+<p class="sub rv" id="research">// research</p>
+<div class="papers">
+<article class="card rv pc"><div><h3>Minimax AI in Connect 4</h3><p>Can we develop an AI to consistently beat humans in Connect 4 while balancing time and performance?</p></div><a class="btn" href="assets/Minimax%20Connect%204.pdf" target="_blank" rel="noopener noreferrer">Read Paper</a></article>
+<article class="card rv pc" style="--d:.08s"><div><h3>Ethical AI in Education</h3><p>A comprehensive analysis of ethical considerations and impacts of AI in educational tools.</p></div><a class="btn" href="assets/Over-reliance%20on%20AI.pdf" target="_blank" rel="noopener noreferrer">Read Paper</a></article>
+</div></div></section>
 
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-          <span>Contact Info</span>
-        </button>
-      </div>
-      <div id="socials-container">
-        <a href="https://www.linkedin.com/in/nderon-beqiri-362b8831a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
-          <img src="./assets/linkedin.png" alt="LinkedIn Profile" class="icon" />
-        </a>
-        <a href="https://github.com/Nderon03" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
-          <img src="./assets/github.png" alt="GitHub Profile" class="icon" />
-        </a>
-      </div>
-    </div>
-  </section>
+<section id="skills"><div class="wrap">
+<div class="sh rv"><span>03 /</span><h2>Skills<i>()</i></h2></div>
+<div class="sk">
+<div class="box rv"><h3>Programming</h3><ul class="tags"><li>Python</li><li>Java</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>SQL</li><li>C</li><li>C++ / OpenGL</li></ul></div>
+<div class="box rv" style="--d:.08s"><h3>Tools</h3><ul class="tags"><li>Git</li><li>GitHub</li><li>Jira</li><li>VS Code</li><li>PyCharm</li><li>IntelliJ</li><li>Jupyter</li><li>Figma</li><li>Microsoft 365</li></ul></div>
+<div class="box rv" style="--d:.16s"><h3>Interests</h3><ul class="tags"><li>Full-stack development</li><li>Software testing</li><li>Automation</li><li>Algorithm design</li><li>Encryption</li><li>Interactive apps</li><li>AI/ML experiments</li></ul></div>
+</div></div></section>
 
-  <!-- About Section -->
-  <section id="about">
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
-      <div class="section__pic-container">
-        <img src="./assets/about-pic.jpeg" alt="Profile picture" class="about-pic" />
-      </div>
-      <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <img src="./assets/experience.png" alt="experience icon" class="icon" />
-            <h3>Experience</h3>
-            <p>
-              Full-stack developer with experience building:<br />
-              Web apps (frontend & backend)<br />
-              Automation scripts<br />
-              Interactive telegram bots<br />
-              Games (see Projects)
-            </p>
-          </div>
-          <div class="details-container">
-            <img src="./assets/education.png" alt="education icon" class="icon" />
-            <h3>Education</h3>
-            <p>BSc (Hons) Computer Science 2:1</p>
-            <p>A-Levels:</p>
-            <p>A* Maths, A Computer Science, B Geography</p>
-            <p>10 GCSEs including 7s in Maths and English</p>
-          </div>
-        </div>
-        <div class="text-container">
-          <p>
-            Full-stack developer with a Computer Science degree from the University of Nottingham.<br />
-            Passionate about solving real problems and turning creative ideas into reality.<br />
-            Eager to learn new coding languages and apply them to projects.
-          </p>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
-  </section>
+<section id="experience"><div class="wrap">
+<div class="sh rv"><span>04 /</span><h2>Experience<i>()</i></h2></div>
+<div class="tl">
+<div class="it rv"><h3>BSc (Hons) Computer Science, 2:1</h3><div class="m">University of Nottingham</div><p>Degree-level study in computer science, including research papers on Minimax AI in Connect 4 and ethical AI in education.</p></div>
+<div class="it rv"><h3>Full-stack and automation projects</h3><div class="m">Self-directed</div><p>Web apps, automation scripts, interactive Telegram bots and games, built front to back.</p></div>
+<div class="it rv"><h3>A-Levels and GCSEs</h3><div class="m">Secondary education</div><p>A* Maths, A Computer Science, B Geography. 10 GCSEs including 7s in Maths and English.</p></div>
+</div></div></section>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <p class="section__text__p1">Some cool</p>
-    <h1 class="title">Projects</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <!-- Project Cards -->
-        <div class="details-container color-container">
-          <div class="article-container">
-            <video class="project-video" poster="./assets/project-1.png" muted loop playsinline preload="none" onclick="this.paused ? this.play() : this.pause();">
-              <source src="./assets/snake.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <h2 class="experience-sub-title project-title">Snake with Java</h2>
-          <p>Click to play/pause video</p>
-          <a href="https://github.com/Nderon03/Snake" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository for Snake">
-            <img src="./assets/github.png" alt="GitHub Repository" class="icon" style="width:24px; height:24px; margin-top:8px;" />
-          </a>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <video class="project-video" poster="./assets/project-2.png" muted loop playsinline preload="none" onclick="this.paused ? this.play() : this.pause();">
-              <source src="./assets/connect4.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <h2 class="experience-sub-title project-title">Connect 4 with Python</h2>
-          <p>Click to play/pause video</p>
-          <a href="https://github.com/Nderon03/Connect4" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository for Connect 4">
-            <img src="./assets/github.png" alt="GitHub Repository" class="icon" style="width:24px; height:24px; margin-top:8px;" />
-          </a>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <video class="project-video" poster="./assets/project-3.png" muted loop playsinline preload="none" onclick="this.paused ? this.play() : this.pause();">
-              <source src="./assets/openglscene.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <h2 class="experience-sub-title project-title">Scene with OpenGL</h2>
-          <p>Click to play/pause video</p>
-          <a href="https://github.com/Nderon03/OpenGL-Scene" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository for OpenGL Scene">
-            <img src="./assets/github.png" alt="GitHub Repository" class="icon" style="width:24px; height:24px; margin-top:8px;" />
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Papers -->
-    <div class="about-containers">
-      <div class="details-container color-container">
-        <h2 class="experience-sub-title">Paper 1: Minimax AI in Connect 4</h2>
-        <p>Can we develop an AI to consistently beat humans in Connect 4 while balancing time and performance?</p>
-        <div class="btn-container">
-          <button class="btn btn-color-2" style="margin-top: 15px;" onclick="window.open('./assets/Minimax Connect 4.pdf')">Read Paper</button>
-        </div>
-      </div>
-      <div class="details-container color-container">
-        <h2 class="experience-sub-title">Paper 2: Ethical AI in Education</h2>
-        <p>A comprehensive analysis of ethical considerations and impacts of AI in educational tools.</p>
-        <div class="btn-container">
-          <button class="btn btn-color-2" style="margin-top: 15px;" onclick="window.open('./assets/Over-reliance on AI.pdf')">Read Paper</button>
-        </div>
-      </div>
-    </div>
-
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-  </section>
-
-  
-<!-- Experience Section -->
-  <section id="experience">
-    <h1 class="title">Skills</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Languages</h2>
-          <div class="article-container">
-
-            <article>
-              <img src="./assets/checkmark.png" class="icon" />
-              <div>
-                <h3>HTML</h3>
-                <div class="stars" data-rating="4.5"></div>
-              </div>
-            </article>
-
-            <article>
-              <img src="./assets/checkmark.png" class="icon" />
-              <div>
-                <h3>CSS</h3>
-                <div class="stars" data-rating="4.5"></div>
-              </div>
-            </article>
-
-            <article>
-              <img src="./assets/checkmark.png" class="icon" />
-              <div>
-                <h3>Java</h3>
-                <div class="stars" data-rating="4"></div>
-              </div>
-            </article>
-
-            <article>
-              <img src="./assets/checkmark.png" class="icon" />
-              <div>
-                <h3>Python</h3>
-                <div class="stars" data-rating="4"></div>
-              </div>
-            </article>
-
-            <article>
-              <img src="./assets/checkmark.png" class="icon" />
-              <div>
-                <h3>JavaScript</h3>
-                <div class="stars" data-rating="4"></div>
-              </div>
-            </article>
-
-            <article>
-              <img src="./assets/checkmark.png" class="icon" />
-              <div>
-                <h3>C++ OpenGL</h3>
-                <div class="stars" data-rating="3.5"></div>
-              </div>
-            </article>
-
-            <article>
-              <img src="./assets/checkmark.png" class="icon" />
-              <div>
-                <h3>SQL</h3>
-                <div class="stars" data-rating="3.5"></div>
-              </div>
-            </article>
-
-            <article>
-              <img src="./assets/checkmark.png" class="icon" />
-              <div>
-                <h3>C</h3>
-                <div class="stars" data-rating="3"></div>
-              </div>
-            </article>
-
-          </div>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-        <p><a href="mailto:beqirinderon@gmail.com">beqirinderon@gmail.com</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-        <p><a href="https://www.linkedin.com/in/nderon-beqiri-362b8831a/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <nav>
-      <div class="nav-links-container">
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <p>&copy; <a href="#" style="text-decoration: none; color: inherit;">Nderon Beqiri 2025</a> | All Rights Reserved</p>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="script.js"></script>
+<section id="contact"><div class="wrap">
+<div class="ct rv"><h2>Let’s build something.</h2>
+<p>I’m open to software development roles and collaborations. Email is the quickest way to reach me.</p>
+<div class="mail">beqirinderon@gmail.com</div>
+<div class="cta" style="margin:0">
+<a class="btn p" href="mailto:beqirinderon@gmail.com">Send an email</a>
+<button class="btn" id="cp" type="button">Copy email</button>
+<a class="btn" href="https://www.linkedin.com/in/nderon-beqiri-362b8831a/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+<a class="btn" href="https://github.com/Nderon03" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div>
+</div></section>
+</main>
+<footer><div class="wrap"><span>© 2026 Nderon Beqiri · built with HTML, CSS &amp; JS</span><a href="#home">Back to top ↑</a></div></footer>
+<div id="toast" role="status" aria-live="polite">Email copied</div>
+<script src="script.js"></script>
 </body>
 </html>
