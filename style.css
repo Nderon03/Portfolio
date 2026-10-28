@@ -57,7 +57,7 @@ h2{font-size:clamp(1.8rem,4vw,2.6rem);letter-spacing:-.03em;margin:0;line-height
 .facts{border:1px solid var(--line);border-radius:12px;background:var(--surf);padding:8px 24px;align-self:start}
 .facts div{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);font-size:15px}.facts div:last-child{border:0}.facts span{color:var(--mut)}.facts b{text-align:right;font-weight:600}
 @media(max-width:780px){.about{grid-template-columns:1fr}}
-.feat{display:grid;grid-template-columns:repeat(2,calc((100% - 40px)/3));justify-content:center;gap:20px}.feat .thumb{aspect-ratio:4/5}.feat .thumb img{object-fit:contain;object-position:center}.feat .mark{display:none}.feat .cb h3{font-size:1.2rem}.feat .cb p{font-size:14px}
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.feat .thumb{aspect-ratio:4/5}.feat .thumb img{object-fit:contain;object-position:center}.feat .mark{display:none}.feat .cb h3{font-size:1.2rem}.feat .cb p{font-size:14px}
 .card{border:1px solid var(--line);background:var(--surf);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;transition:border-color .3s,transform .3s}
 .card:hover{border-color:var(--ac);transform:translateY(-3px)}
 .thumb{aspect-ratio:16/9;position:relative;overflow:hidden;border-bottom:1px solid var(--line);display:grid;place-items:center;background:#0d1117}
@@ -80,7 +80,7 @@ h2{font-size:clamp(1.8rem,4vw,2.6rem);letter-spacing:-.03em;margin:0;line-height
 .papers{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .pc{flex-direction:row;align-items:center;justify-content:space-between;gap:20px;padding:24px}
 .pc h3{margin:0 0 6px;font-size:1.1rem}.pc p{margin:0;color:var(--mut);font-size:14px}.pc .btn{flex-shrink:0}
-@media(max-width:900px){.feat,.more,.papers{grid-template-columns:1fr;justify-content:stretch}.feat .thumb{aspect-ratio:4/3}.pc{flex-direction:column;align-items:flex-start}}
+@media(max-width:900px){.feat,.more,.papers{grid-template-columns:1fr}.feat .thumb{aspect-ratio:4/3}.pc{flex-direction:column;align-items:flex-start}}
 .sk{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .sk .box{border:1px solid var(--line);border-radius:12px;padding:24px;background:var(--surf)}
 .sk h3{margin:0 0 16px;font:500 14px ui-monospace,Menlo,monospace;color:var(--ac);letter-spacing:.06em;text-transform:uppercase}
