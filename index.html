@@ -11,6 +11,13 @@
 <meta property="og:description" content="Computer Science graduate building useful applications and interactive games.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0c10'/%3E%3Cpath d='M14 20l14 12-14 12' fill='none' stroke='%23d4b483' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M34 46h18' stroke='%23d4b483' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
+<style>
+/* Projects: 4 cards laid out 2x2 (merge into style.css if you like) */
+.more{grid-template-columns:repeat(2,1fr)}
+.more .card:last-child{grid-column:auto}
+.more .card:last-child .thumb{aspect-ratio:16/9}
+@media(max-width:640px){.more{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
 <div id="bar" aria-hidden="true"></div><div id="grid" aria-hidden="true"></div>
@@ -18,7 +25,7 @@
 <a class="logo" href="#home">nderon<b>.</b>dev</a>
 <button class="burger" id="bg" aria-label="Toggle menu" aria-expanded="false" aria-controls="lk"><span></span><span></span><span></span></button>
 <ul class="links" id="lk">
-<li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li><li><a href="#experience">Experience</a></li><li><a href="#contact">Contact</a></li>
+<li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#games">Games</a></li><li><a href="#skills">Skills</a></li><li><a href="#experience">Experience</a></li><li><a href="#contact">Contact</a></li>
 <li><a class="cvl" href="assets/CV_Nderon_Beqiri.pdf" target="_blank" rel="noopener noreferrer">CV ↗</a></li>
 </ul></div></header>
 <main>
@@ -44,24 +51,76 @@
 <span class="ln">9</span>};<span class="cur"></span></code></pre></div>
 </div>
 <div class="wrap stats h" style="--d:.6s">
-<a href="#projects"><b>6+</b><span>Projects built &amp; shipped ↓</span></a>
-<a href="#research"><b>2+</b><span>Research papers written ↓</span></a>
-<a href="#skills"><b>8</b><span>Programming languages ↓</span></a>
+<a href="#projects"><b>8+</b><span>Projects built &amp; shipped ↓</span></a>
+<a href="#reports"><b>9</b><span>Reports &amp; papers written ↓</span></a>
+<a href="#skills"><b>9</b><span>Programming languages ↓</span></a>
 <a href="#about"><b>2:1</b><span>BSc (Hons) Computer Science ↓</span></a></div>
 </section>
 
+<section id="about"><div class="wrap">
+<div class="sh rv"><span>01 /</span><h2>About<i>()</i></h2></div>
+<div class="about">
+<div class="rv"><p>I’m a Computer Science graduate who likes turning ideas into software people can actually use.</p>
+<p>My work ranges from multiplayer browser party games to game AI, constraint solvers and database-backed web apps. I enjoy the full loop of designing, building, testing and writing it up.</p>
+<p>I’m looking for software development roles where I can keep building and learning.</p></div>
+<div class="facts rv" style="--d:.1s"><div><span>Degree</span><b>BSc (Hons) Computer Science, 2:1</b></div><div><span>University</span><b>University of Nottingham</b></div><div><span>Main languages</span><b>Python, Java, JavaScript, SQL, C++</b></div><div><span>Focus</span><b>Games, AI &amp; full-stack apps</b></div><div><span>Status</span><b>Open to software roles</b></div></div>
+</div></div></section>
+
 <section id="projects"><div class="wrap">
 <div class="sh rv"><span>02 /</span><h2>Projects<i>()</i></h2></div>
-<p class="sub rv" style="margin-top:0">// projects</p>
+<p class="sub rv" style="margin-top:0">// software projects</p>
 <div class="more">
 <article class="card rv"><div class="thumb"><video muted loop playsinline preload="none" poster="assets/project-2.png" aria-label="Connect 4 demo video"><source src="assets/connect4.mp4" type="video/mp4"></video><button class="pp" type="button" aria-label="Play or pause Connect 4 video">▶</button></div>
-<div class="cb"><h3>Connect 4 with Python</h3><p>Connect 4 against a Minimax AI opponent, and the basis for my paper on balancing AI strength against search time.</p><a class="lnk" href="https://github.com/Nderon03/Connect4" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a></div></article>
+<div class="cb"><h3>Connect 4 with Python</h3><p>Connect 4 against a Minimax AI opponent, and the basis for my paper on balancing AI strength against search time.</p><ul class="tags"><li>Python</li><li>Minimax</li><li>Game AI</li></ul><div class="acts"><a class="btn" href="https://github.com/Nderon03/Connect4" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a><a class="btn" href="assets/Minimax%20Connect%204.pdf" target="_blank" rel="noopener noreferrer">Read paper</a></div></div></article>
 <article class="card rv" style="--d:.08s"><div class="thumb"><video muted loop playsinline preload="none" poster="assets/project-1.png" aria-label="Snake demo video"><source src="assets/snake.mp4" type="video/mp4"></video><button class="pp" type="button" aria-label="Play or pause Snake video">▶</button></div>
-<div class="cb"><h3>Snake with Java</h3><p>A classic Snake game written in Java.</p><a class="lnk" href="https://github.com/Nderon03/Snake" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a></div></article>
+<div class="cb"><h3>Snake with Java</h3><p>A classic Snake game written in Java.</p><ul class="tags"><li>Java</li><li>Game development</li></ul><div class="acts"><a class="btn" href="https://github.com/Nderon03/Snake" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a></div></div></article>
 <article class="card rv" style="--d:.16s"><div class="thumb"><video muted loop playsinline preload="none" poster="assets/project-3.png" aria-label="OpenGL scene demo video"><source src="assets/openglscene.mp4" type="video/mp4"></video><button class="pp" type="button" aria-label="Play or pause OpenGL video">▶</button></div>
-<div class="cb"><h3>Scene with OpenGL</h3><p>A 3D scene built in C++ with OpenGL.</p><a class="lnk" href="https://github.com/Nderon03/OpenGL-Scene" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a></div></article>
+<div class="cb"><h3>Scene with OpenGL</h3><p>A 3D scene built in C++ with OpenGL.</p><ul class="tags"><li>C++</li><li>OpenGL</li><li>3D graphics</li></ul><div class="acts"><a class="btn" href="https://github.com/Nderon03/OpenGL-Scene" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a></div></div></article>
+<article class="card rv" style="--d:.24s"><div class="thumb"><img src="assets/movie-database.png" alt="Screenshot of the Movie Database app showing search, delete and insert forms for movies and actors" loading="lazy"></div>
+<div class="cb"><h3>Movie Database with SQL</h3><p>A web app for managing a movie database. Search movies and actors, insert new records and delete them by title or ID, with foreign key constraints keeping the data consistent.</p><ul class="tags"><li>PHP</li><li>MySQL</li><li>SQL</li><li>HTML</li></ul><div class="acts"><a class="btn" href="https://github.com/Nderon03/SQL-Search-Movies-Database/tree/main" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a><a class="btn" href="assets/Database-Web-Coursework-Report.pdf" target="_blank" rel="noopener noreferrer">Read report</a></div></div></article>
 </div>
-<p class="sub rv">// party games</p>
+<p class="sub rv" id="reports">// coursework &amp; reports</p>
+<div class="papers">
+<article class="card rv pc"><div class="meta"><span class="badge">Symbolic AI</span><span class="yr">COMP3008</span></div>
+<h3>Exam timetabling with Z3</h3>
+<p>Models exam timetabling as a satisfiability problem in first-order logic: room and exam capacities, clash-free exams and no back-to-back slots. Passes all 20 provided sat and unsat instances and exports example timetables to Excel.</p>
+<ul class="tags"><li>Python</li><li>Z3</li><li>First-order logic</li></ul>
+<div class="acts"><a class="btn" href="assets/Symbolic-AI-Exam-Timetabling.pdf" target="_blank" rel="noopener noreferrer">Read paper</a></div></article>
+<article class="card rv pc" style="--d:.08s"><div class="meta"><span class="badge">Symbolic AI</span><span class="yr">COMP3008</span></div>
+<h3>Workflow satisfiability with OR-Tools</h3>
+<p>Solves the workflow satisfiability problem with authorisation, binding and separation of duty, at-most-k and one-team constraints. A custom callback stops at two solutions to test uniqueness, and the solver beat the reference runtimes on the seven timed instances.</p>
+<ul class="tags"><li>Python</li><li>OR-Tools</li><li>Constraint programming</li></ul>
+<div class="acts"><a class="btn" href="assets/Symbolic-AI-Workflow-Satisfiability.pdf" target="_blank" rel="noopener noreferrer">Read paper</a></div></article>
+<article class="card rv pc"><div class="meta"><span class="badge">Search &amp; optimisation</span><span class="yr">COMP2001</span></div>
+<h3>Selection hyper-heuristic for Min-Set-Cover</h3>
+<p>A Java hyper-heuristic for the Minimum Set Cover problem. Reinforcement learning selects between four hill climbers (next descent, steepest descent, Davis’s bit and random mutation) with delta evaluation. Reached a best objective value of 5 in all five trials on both benchmark instances.</p>
+<ul class="tags"><li>Java</li><li>Hyper-heuristics</li><li>Reinforcement learning</li><li>Hill climbing</li></ul>
+<div class="acts"><a class="btn" href="assets/AIM-Hyper-Heuristic-Set-Cover-Report.pdf" target="_blank" rel="noopener noreferrer">Read report</a><a class="btn" href="https://github.com/Nderon03/MIN-SET-COVER-Selection-Hyper-Heuristic/tree/main" target="_blank" rel="noopener noreferrer">View code ↗</a></div></article>
+<article class="card rv pc" style="--d:.08s"><div class="meta"><span class="badge">Machine learning</span><span class="yr">Dec 2023</span></div>
+<h3>ML for breast cancer outcome prediction</h3>
+<p>Predicts pathological complete response and relapse-free survival from clinical and MRI-derived I-SPY 2 data. Random Forest reached 0.90 balanced accuracy on PCR, and SVR the lowest MAE (0.145) on RFS.</p>
+<ul class="tags"><li>Classification</li><li>Regression</li><li>Feature selection</li><li>Cross-validation</li></ul>
+<div class="acts"><a class="btn" href="assets/ML-Breast-Cancer-Report.pdf" target="_blank" rel="noopener noreferrer">Read paper</a></div></article>
+<article class="card rv pc"><div class="meta"><span class="badge">AI ethics</span></div>
+<h3>Ethical AI in Education</h3>
+<p>A comprehensive analysis of ethical considerations and impacts of AI in educational tools.</p>
+<ul class="tags"><li>AI ethics</li><li>Education</li></ul>
+<div class="acts"><a class="btn" href="assets/Over-reliance%20on%20AI.pdf" target="_blank" rel="noopener noreferrer">Read paper</a></div></article>
+<article class="card rv pc" style="--d:.08s"><div class="meta"><span class="badge">Databases</span><span class="yr">COMP1004</span></div>
+<h3>Relational database design in SQL</h3>
+<p>Designs and builds a one-to-many Actor and Movie database in MariaDB, from the E/R diagram and table creation through to populating, searching and updating records. Includes a worked example of a foreign key constraint blocking a delete, and the fix.</p>
+<ul class="tags"><li>SQL</li><li>MariaDB</li><li>E/R modelling</li><li>Foreign keys</li></ul>
+<div class="acts"><a class="btn" href="assets/Database-Coursework-Report.pdf" target="_blank" rel="noopener noreferrer">Read report</a></div></article>
+<article class="card rv pc"><div class="meta"><span class="badge">Cybersecurity</span><span class="yr">COMP3006</span></div>
+<h3>Hardening a vulnerable Ubuntu server</h3>
+<p>A security hardening report for a lab Ubuntu server: strong password policy and hashing, patching, UFW and iptables rules, closing insecure ports such as FTP and Telnet, and adding a Snort IDS. After the changes, the earlier Meterpreter exploit no longer succeeded.</p>
+<ul class="tags"><li>Linux</li><li>UFW / iptables</li><li>Snort</li><li>Penetration testing</li></ul>
+<div class="acts"><a class="btn" href="assets/Computer-Security-Report.pdf" target="_blank" rel="noopener noreferrer">Read report</a></div></article>
+</div>
+</div></section>
+
+<section id="games"><div class="wrap">
+<div class="sh rv"><span>03 /</span><h2>Party games<i>()</i></h2></div>
 <div class="feat">
 <article class="card rv">
 <div class="thumb t1"><div class="art"></div><div class="mark">SPORTS<br>IMPOSTOR</div>
@@ -92,25 +151,21 @@
 <ul class="tags"><li>Party game</li><li>Challenges</li><li>Elimination</li><li>Browser</li></ul>
 <a class="btn p" href="https://last-1-standing.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Play Last One Standing live (opens in a new tab)">Play Live <span aria-hidden="true">↗</span></a></div></article>
 </div>
-<p class="sub rv" id="research">// research</p>
-<div class="papers">
-<article class="card rv pc"><div><h3>Minimax AI in Connect 4</h3><p>Can we develop an AI to consistently beat humans in Connect 4 while balancing time and performance?</p></div><a class="btn" href="assets/Minimax%20Connect%204.pdf" target="_blank" rel="noopener noreferrer">Read Paper</a></article>
-<article class="card rv pc" style="--d:.08s"><div><h3>Ethical AI in Education</h3><p>A comprehensive analysis of ethical considerations and impacts of AI in educational tools.</p></div><a class="btn" href="assets/Over-reliance%20on%20AI.pdf" target="_blank" rel="noopener noreferrer">Read Paper</a></article>
-</div></div></section>
+</div></section>
 
 <section id="skills"><div class="wrap">
-<div class="sh rv"><span>03 /</span><h2>Skills<i>()</i></h2></div>
+<div class="sh rv"><span>04 /</span><h2>Skills<i>()</i></h2></div>
 <div class="sk">
-<div class="box rv"><h3>Programming</h3><ul class="tags"><li>Python</li><li>Java</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>SQL</li><li>C</li><li>C++ / OpenGL</li></ul></div>
-<div class="box rv" style="--d:.08s"><h3>Tools</h3><ul class="tags"><li>Git</li><li>GitHub</li><li>Jira</li><li>VS Code</li><li>PyCharm</li><li>IntelliJ</li><li>Jupyter</li><li>Figma</li><li>Microsoft 365</li></ul></div>
+<div class="box rv"><h3>Programming</h3><ul class="tags"><li>Python</li><li>Java</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>SQL</li><li>PHP</li><li>C</li><li>C++ / OpenGL</li></ul></div>
+<div class="box rv" style="--d:.08s"><h3>Tools</h3><ul class="tags"><li>Git</li><li>GitHub</li><li>MySQL</li><li>Jira</li><li>VS Code</li><li>PyCharm</li><li>IntelliJ</li><li>Jupyter</li><li>Figma</li><li>Microsoft 365</li></ul></div>
 <div class="box rv" style="--d:.16s"><h3>Interests</h3><ul class="tags"><li>Full-stack development</li><li>Software testing</li><li>Automation</li><li>Algorithm design</li><li>Encryption</li><li>Interactive apps</li><li>AI/ML experiments</li></ul></div>
 </div></div></section>
 
 <section id="experience"><div class="wrap">
-<div class="sh rv"><span>04 /</span><h2>Experience<i>()</i></h2></div>
+<div class="sh rv"><span>05 /</span><h2>Experience<i>()</i></h2></div>
 <div class="tl">
-<div class="it rv"><h3>BSc (Hons) Computer Science, 2:1</h3><div class="m">University of Nottingham</div><p>Degree-level study in computer science, including research papers on Minimax AI in Connect 4 and ethical AI in education.</p></div>
-<div class="it rv"><h3>Software &amp; data projects</h3><div class="m">Self-directed</div><p>Web apps, interactive party games, 3D graphics with OpenGL, and data work from cleansing and preprocessing through to AI modelling, including a Minimax Connect 4 opponent.</p></div>
+<div class="it rv"><h3>BSc (Hons) Computer Science, 2:1</h3><div class="m">University of Nottingham</div><p>Degree-level study in computer science, including coursework in AI, databases, security and algorithms, with written reports on each.</p></div>
+<div class="it rv"><h3>Software &amp; data projects</h3><div class="m">Self-directed</div><p>Web apps, interactive party games, 3D graphics with OpenGL, and data work from cleansing and preprocessing through to AI modelling, including a Minimax Connect 4 opponent and a PHP and MySQL movie database.</p></div>
 <div class="it rv"><h3>A-Levels and GCSEs</h3><div class="m">Secondary education</div><p>A* Maths, A Computer Science, B Geography. 10 GCSEs including 7s in Maths and English.</p></div>
 </div></div></section>
 
